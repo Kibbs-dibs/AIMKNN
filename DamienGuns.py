@@ -9,7 +9,7 @@ def extract_features(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # Convert to grayscale
     image = cv2.resize(image, (100, 100))  # You can adjust the resize value to change its resolution
     return image.flatten()  # Convert to 1D feature vector
-
+ 
 # Define categories
 categories = ["Pistol", "Shotgun", "MachineGun", "RPG", "Sniper", "Other"]
 dataset = []
